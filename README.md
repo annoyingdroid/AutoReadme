@@ -5,15 +5,18 @@
             ## Table of Contents
             - [Description](#description)
             - [Installation](#installation)
+            - [Testing](#testing)
             - [Purpose](#purpose)
             - [License](#license)
-            - [Contributing](#contributers)
+            - [Contributing](#contributors)
             ## Description
             🔍 Generates a fancy readme, automagically
             ## Installation
-            💾 Run this from the root directory with 'node index.js'
+            💾 Run this application from the same folder as index.js using 'node index.js'
             ## Purpose
-            💻 Makes generating a nice readme easier
+            💻 To make writing readme files easier :)
+            ## Testing
+            🧪 You should be presented with several prompts asking for user input, eventually leading to a generated README.md file
             ## License
             ![badge](https://img.shields.io/badge/license-Open-brightgreen)
             <br />

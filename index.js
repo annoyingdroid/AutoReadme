@@ -35,13 +35,19 @@ inquirer.
         
         },
         {
+            name: 'testing',
+            message: 'Give a brief test procedure.',
+            type: 'input'
+        
+        },
+        {
             name: 'purpose',
             message: 'What is the purpose of this project?',
             type: 'input'
         
         },
         {
-            name: 'contributers',
+            name: 'contributors',
             message: 'Who contributed to this project?',
             type: 'input'
         
@@ -69,21 +75,24 @@ inquirer.
             ## Table of Contents
             - [Description](#description)
             - [Installation](#installation)
+            - [Testing](#testing)
             - [Purpose](#purpose)
             - [License](#license)
-            - [Contributing](#contributers)
+            - [Contributing](#contributors)
             ## Description
             🔍 ${answers.description}
             ## Installation
             💾 ${answers.installation}
             ## Purpose
             💻 ${answers.purpose}
+            ## Testing
+            🧪 ${answers.testing}
             ## License
             ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
             <br />
             This application is covered by the ${answers.license} license. 
             ## Contributers
-            👪 ${answers.contributers}
+            👪 ${answers.contributors}
             :octocat: Find me on GitHub: [${answers.username}](https://github.com/${answers.username})<br />
             <br />
             _This README was generated using [AutoReadme](https://github.com/annoyingdroid/AutoReadme)_
