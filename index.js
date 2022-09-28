@@ -1,10 +1,9 @@
 //Variables
 const inquirer = require('inquirer');
-
-//Prompt the user questions to populate the README.md
-import inquirer from 'inquirer';
+const fs = require('fs');
 
 inquirer
+//Code for user input
   .prompt([
     {
         name: 'project',
@@ -56,21 +55,23 @@ inquirer
         ],
         type: 'list'
        
-    },
+    }
 ])
+//Template code for readme generation
   .then((answers) => {
+    fs.writeFile('README.md',
     `
-        <h1 align="center">${answers.project} 👋</h1>
+        # ${answers.project}
         
         ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
-        ## Description
-        🔍 ${answers.description}
         ## Table of Contents
         - [Description](#description)
         - [Installation](#installation)
         - [Usage](#usage)
         - [License](#license)
         - [Contributing](#contributing)
+        ## Description
+        🔍 ${answers.description}
         ## Installation
         💾 ${answers.installation}
         ## Usage
@@ -84,7 +85,7 @@ inquirer
         :octocat: Find me on GitHub: [${answers.username}](https://github.com/${answers.username})<br />
         <br />
         _This README was generated using [AutoReadme](https://github.com/annoyingdroid/AutoReadme)_
-    `;
+    `)
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -93,7 +94,3 @@ inquirer
       // Something else went wrong
     }
   });
-
-//Code for user input
-
-//Template code for readme generation
