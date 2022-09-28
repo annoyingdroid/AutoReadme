@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^9.1.2"
+    "inquirer": "^9.1.2",
+    "markdown-js": "^0.0.4"
   },
   "name": "autoreadme",
   "version": "1.0.0",
   "description": "Generates a fancy readme, automagically",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,5 @@
   },
   "homepage": "https://github.com/annoyingdroid/AutoReadme#readme",
   "keywords": [],
-  "type":"module"
+  "type": "module"
 }
